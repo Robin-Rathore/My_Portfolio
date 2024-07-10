@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Custom class for Josefin Sans */
+.josefin-sans-custom {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with desired weight */
+  font-style: normal;
+}
+
+/* You can create multiple classes for different font weights */
+.josefin-sans-light {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Light weight */
+  font-style: normal;
+}
+
+.josefin-sans-bold {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+/* Custom bottom shadow */
+.custom-bottom-shadow {
+  box-shadow: 0px 20px 25px -5px rgba(0,0,0,0.1),
+  -6px 109px 16px -92px rgba(0,0,0,1);
+}
+
+            
+.arrow-pointer {
+  width: 100px;
+  height: 50px;
+  background: #5c5d60;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0; width: 0; height: 0;
+    border-left: 25px solid #3d3e42;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid #5c5d60;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+  }
+}
+
+.box1{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box2{
+  border-radius: 0px 0px 0px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.box1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px #ffc86b;
+  background-color: #ffc86b;
+}
+
+
+.icon:hover{
+  color: #ffc86b;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.drawer-container {
+  overflow: hidden;
+}
+
+.drawer-wrapper {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.drawer-content {
+  transform: translateX(100%);
+}
+.connect-icon:hover{
+  color: #3d3e42;
+}
